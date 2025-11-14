@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>김종민 교수 | 경인교육대학교 교육학과</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="경인교육대학교 교육학과 김종민 교수의 연구, 강의, 프로젝트 및 CV를 소개하는 공식 페이지입니다.">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #1e293b;
+      --text-sub: #475569;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --border: #e2e8f0;
+      --radius: 16px;
+      --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+    }
+
+    /* 언어별 표시 제어 */
+    html[lang="ko"] .lang-en { display: none !important; }
+    html[lang="en"] .lang-ko { display: none !important; }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    a { text-decoration: none; color: inherit; transition: color 0.2s; }
+    a:hover { color: var(--accent); }
+
+    /* 네비게이션 */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo span { font-size: 14px; font-weight: 400; color: var(--text-sub); }
+    
+    .menu {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-sub);
+      align-items: center;
+    }
+    .menu a:hover { color: var(--accent); }
+
+    .lang-switch {
+      display: flex;
+      background: #f1f5f9;
+      padding: 3px;
+      border-radius: 99px;
+      margin-left: 10px;
+    }
+    .lang-btn {
+      border: none;
+      background: none;
+      padding: 4px 10px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #64748b;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: #fff;
+      color: var(--accent);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* 레이아웃 */
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* 섹션 공통 */
+    section { margin-bottom: 60px; scroll-margin-top: 80px; }
+    .section-head {
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .section-head h2 { font-size: 22px; color: #0f172a; }
+    .section-head span { font-size: 13px; color: #94a3b8; }
+
+    .card {
+      background: #fff;
+      padding: 24px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+      margin-bottom: 20px;
+    }
+
+    /* 스크롤 박스 */
+    .scroll-box {
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+    .scroll-box::-webkit-scrollbar { width: 6px; }
+    .scroll-box::-webkit-scrollbar-track { background: #f1f5f9; }
+    .scroll-box::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+    /* 데이터 리스트 스타일 */
+    .data-list { list-style: none; padding: 0; margin: 0; }
+    .data-item { 
+      padding: 12px 0; 
+      border-bottom: 1px dashed var(--border); 
+      display: flex; 
+      flex-direction: column; 
+      gap: 4px;
+    }
+    .data-item:last-child { border-bottom: none; }
+    
+    .item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+    .item-title { 
+      font-weight: 600; 
+      color: var(--text-main); 
+      font-size: 15px; 
+      line-height: 1.4;
+    }
+    a.item-title { color: var(--accent); }
+    a.item-title:hover { text-decoration: underline; color: #1d4ed8; }
+
+    .item-meta { font-size: 13px; color: var(--text-sub); display: flex; gap: 10px; flex-wrap: wrap; }
+    .badge { 
+      display: inline-block; 
+      padding: 2px 6px; 
+      background: #f1f5f9; 
+      border-radius: 4px; 
+      font-size: 11px; 
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    /* 경력 테이블 스타일 (Timeline) */
+    .career-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .career-table tr { border-bottom: 1px solid #f1f5f9; }
+    .career-table tr:last-child { border-bottom: none; }
+    .career-table td { padding: 12px 8px; vertical-align: top; }
+    .career-date { 
+      width: 140px; 
+      color: #64748b; 
+      font-feature-settings: "tnum"; 
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .career-role { color: #1e293b; font-weight: 600; display: block; margin-bottom: 2px;}
+    .career-org { color: #475569; font-size: 13px; }
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: #fff;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 50px;
+    }
+    .hero-content h1 { font-size: 32px; margin-bottom: 10px; color: #0f172a; }
+    .hero-subtitle { color: var(--accent); font-weight: 600; margin-bottom: 20px; display: block; }
+    .hero-desc { color: var(--text-sub); font-size: 15px; margin-bottom: 24px; word-break: keep-all; }
+    .tag-container { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { font-size: 12px; background: var(--accent-soft); color: var(--accent); padding: 5px 10px; border-radius: 6px; font-weight: 600; }
+    .hero-img { text-align: center; }
+    .hero-img img { width: 100%; max-width: 320px; border-radius: 20px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15); }
+
+    /* Grid Layouts */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    
+    h3 { font-size: 17px; margin-bottom: 16px; color: #334155; border-left: 4px solid var(--accent); padding-left: 10px; display: flex; align-items: center; }
+
+    /* Contact Card */
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .contact-item { display: flex; flex-direction: column; }
+    .contact-label { font-size: 12px; font-weight: 700; color: #94a3b8; margin-bottom: 4px; text-transform: uppercase; }
+    .contact-value { font-size: 14px; color: #334155; font-weight: 500; word-break: break-all; }
+    .contact-value a { border-bottom: 1px solid var(--border); }
+
+    footer { text-align: center; padding: 40px 0; color: #94a3b8; font-size: 12px; border-top: 1px solid var(--border); }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding: 24px; }
+      .hero-img { order: -1; margin-bottom: 20px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .menu { display: none; }
+      .nav-container { justify-content: center; }
+      .career-date { width: 90px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <span class="lang-ko">경인교육대학교 교육학과</span>
+        <span class="lang-en">GINUE Dept. of Education</span>
+        <strong>김종민 교수</strong>
+      </div>
+      
+      <div class="lang-switch">
+        <button class="lang-btn active" onclick="setLanguage('ko')">KR</button>
+        <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+      </div>
+
+      <nav class="menu">
+        <a href="#about"><span class="lang-ko">소개</span><span class="lang-en">About</span></a>
+        <a href="#career"><span class="lang-ko">경력</span><span class="lang-en">Career</span></a>
+        <a href="#projects"><span class="lang-ko">프로젝트</span><span class="lang-en">Projects</span></a>
+        <a href="#publications"><span class="lang-ko">논문/저서</span><span class="lang-en">Publications</span></a>
+        <a href="#contact"><span class="lang-ko">연락처</span><span class="lang-en">Contact</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <div class="hero-content">
+        <div class="lang-ko">
+          <h1>김종민 <span style="font-size:0.6em; color:#64748b; font-weight:400;">교수 / 교육학 박사</span></h1>
+          <span class="hero-subtitle">경인교육대학교 교육학과 학과장</span>
+          <p class="hero-desc">
+            데이터와 교육을 연결하여 더 나은 학교를 설계합니다.<br>
+            교육측정, 학습분석(Learning Analytics), 사회네트워크분석(SNA)을 통해
+            학생의 성장과 교사의 전문성, 학교 조직의 변화를 연구합니다.
+          </p>
+          <div class="tag-container">
+            <span class="tag">교육측정 & 평가</span>
+            <span class="tag">교육 빅데이터</span>
+            <span class="tag">사회네트워크분석</span>
+            <span class="tag">학교개선</span>
+          </div>
+        </div>
+
+        <div class="lang-en">
+          <h1>Chong Min Kim, PhD</h1>
+          <span class="hero-subtitle">Professor & Chair, Dept. of Education, GINUE</span>
+          <p class="hero-desc">
+            Connecting data and education to design better schools.<br>
+            Specializing in Educational Measurement, Learning Analytics, and Social Network Analysis (SNA) 
+            to foster student growth, teacher professionalism, and school improvement.
+          </p>
+          <div class="tag-container">
+            <span class="tag">Measurement & Assessment</span>
+            <span class="tag">Learning Analytics</span>
+            <span class="tag">Social Network Analysis</span>
+            <span class="tag">School Improvement</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="김종민교수님 프로필 사진.jpg" alt="김종민 교수 사진">
+      </div>
+    </section>
+
+    <section id="career">
+      <div class="section-head">
+        <h2 class="lang-ko">약력 및 경력</h2>
+        <h2 class="lang-en">Biography & Career</h2>
+      </div>
+      
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="lang-ko">학력</h3>
+          <h3 class="lang-en">Education</h3>
+          <ul class="data-list">
+            <li class="data-item">
+              <span class="career-role">Ph.D. in Measurement & Quantitative Methods</span>
+              <span class="career-org">Michigan State University (2006.08 ~ 2011.05)</span>
+            </li>
+            <li class="data-item">
+              <span class="career-role">M.A. in Education</span>
+              <span class="career-org">Yonsei University (연세대학교)</span>
+            </li>
+            <li class="data-item">
+              <span class="career-role">B.A. in Education</span>
+              <span class="career-org">Yonsei University (연세대학교)</span>
+            </li>
+          </ul>
+
+          <h3 class="lang-ko" style="margin-top:24px;">현직 (Current Positions)</h3>
+          <h3 class="lang-en" style="margin-top:24px;">Current Positions</h3>
+          <table class="career-table lang-ko">
+            <tr>
+              <td class="career-date">2025.01 - 현재</td>
+              <td><span class="career-role">편집위원장</span> <span class="career-org">한국홀리스틱융합교육학회</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2025.03 - 현재</td>
+              <td><span class="career-role">편집위원</span> <span class="career-org">한국교육개발원 '한국교육'</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2024.03 - 현재</td>
+              <td><span class="career-role">학과장 · 전공주임</span> <span class="career-org">경인교대 교육학과 / 교육방법 전공</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2022.09 - 현재</td>
+              <td><span class="career-role">정교수</span> <span class="career-org">경인교육대학교 교육학과</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2023.03 - 현재</td>
+              <td><span class="career-role">심의위원</span> <span class="career-org">경인교대 생명윤리위원회(IRB)</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2023.03 - 현재</td>
+              <td><span class="career-role">재정위원(교수대표)</span> <span class="career-org">경인교대 재정위원회</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2018.01 - 현재</td>
+              <td><span class="career-role">이사 · 편집위원</span> <span class="career-org">한국교육평가학회 / 한국기업교육학회</span></td>
+            </tr>
+          </table>
+
+          <table class="career-table lang-en">
+             <tr>
+              <td class="career-date">2025.01 - Present</td>
+              <td><span class="career-role">Editor-in-Chief</span> <span class="career-org">Korea Society of Holistic Convergence Education</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2025.03 - Present</td>
+              <td><span class="career-role">Editorial Board Member</span> <span class="career-org">KEDI Journal of Educational Policy</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2024.03 - Present</td>
+              <td><span class="career-role">Department Chair</span> <span class="career-org">Dept. of Education, GINUE</span></td>
+            </tr>
+            <tr>
+              <td class="career-date">2022.09 - Present</td>
+              <td><span class="career-role">Full Professor</span> <span class="career-org">GINUE</span></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3 class="lang-ko">주요 경력</h3>
+          <h3 class="lang-en">Past Experience</h3>
+          <div class="scroll-box">
+            <table class="career-table lang-ko">
+              <tr>
+                <td class="career-date">2023.03 - 2025.02</td>
+                <td><span class="career-role">객원교수</span> <span class="career-org">연세대학교</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2021.03 - 2023.02</td>
+                <td><span class="career-role">입학본부장</span> <span class="career-org">경인교육대학교</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2021.03 - 2023.02</td>
+                <td><span class="career-role">편집위원</span> <span class="career-org">한국교원교육학회 / 열린유아교육학회</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2023.03 - 2023.08</td>
+                <td><span class="career-role">강사</span> <span class="career-org">건국대학교</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2017.09 - 2022.08</td>
+                <td><span class="career-role">부교수</span> <span class="career-org">경인교육대학교</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2018.08 - 2019.08</td>
+                <td><span class="career-role">Visiting Scholar</span> <span class="career-org">Michigan State University</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2019.03 - 2023.02</td>
+                <td><span class="career-role">편집위원</span> <span class="career-org">한국초등교육학회</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2018.03 - 2022.02</td>
+                <td><span class="career-role">편집위원</span> <span class="career-org">충남대학교 교육연구소</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2013.08 - 2017.08</td>
+                <td><span class="career-role">조교수</span> <span class="career-org">경인교육대학교</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2012.09 - 2013.08</td>
+                <td><span class="career-role">부연구위원</span> <span class="career-org">한국교육개발원 (KEDI)</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2010.12 - 2012.08</td>
+                <td><span class="career-role">박사후 연구원 (Postdoc)</span> <span class="career-org">Northwestern University</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2006.03 - 2006.08</td>
+                <td><span class="career-role">강사</span> <span class="career-org">나사렛대학교</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2004.09 - 2006.08</td>
+                <td><span class="career-role">강사</span> <span class="career-org">경인여자대학</span></td>
+              </tr>
+            </table>
+
+            <table class="career-table lang-en">
+              <tr>
+                <td class="career-date">2023.03 - 2025.02</td>
+                <td><span class="career-role">Visiting Professor</span> <span class="career-org">Yonsei University</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2021.03 - 2023.02</td>
+                <td><span class="career-role">Director of Admissions</span> <span class="career-org">GINUE</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2021.03 - 2023.02</td>
+                <td><span class="career-role">Editorial Board</span> <span class="career-org">Korean Society for Teacher Ed.</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2017.09 - 2022.08</td>
+                <td><span class="career-role">Associate Professor</span> <span class="career-org">GINUE</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2018.08 - 2019.08</td>
+                <td><span class="career-role">Visiting Scholar</span> <span class="career-org">Michigan State University</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2013.08 - 2017.08</td>
+                <td><span class="career-role">Assistant Professor</span> <span class="career-org">GINUE</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2012.09 - 2013.08</td>
+                <td><span class="career-role">Associate Research Fellow</span> <span class="career-org">KEDI</span></td>
+              </tr>
+              <tr>
+                <td class="career-date">2010.12 - 2012.08</td>
+                <td><span class="career-role">Postdoctoral Fellow</span> <span class="career-org">Northwestern University</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head">
+        <h2 class="lang-ko">연구 프로젝트</h2>
+        <h2 class="lang-en">Research Projects</h2>
+        <span class="lang-ko">총 63건</span>
+        <span class="lang-en">Total 63 Projects</span>
+      </div>
+
+      <div class="card">
+        <div class="scroll-box">
+          <ul class="data-list lang-ko">
+            <li class="data-item"><div class="item-title">63. 국립대학육성사업 성과분석 및 중장기 발전계획</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2025)</div></li>
+            <li class="data-item"><div class="item-title">62. 경인교육대학교 중장기 발전방향 연구</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2025)</div></li>
+            <li class="data-item"><div class="item-title">61. 에듀테크의 교육적 효과성 분석 가이드 개발 연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육학술정보원 (2025)</div></li>
+            <li class="data-item"><div class="item-title">60. 2025 기초학력지원센터 성과 평가</div><div class="item-meta"><span class="badge">공동</span> 인천광역시 교육청 (2025-2026)</div></li>
+            <li class="data-item"><div class="item-title">59. 신병 정신전력 효과분석</div><div class="item-meta"><span class="badge">책임</span> 국방정신전력원 (2025)</div></li>
+            <li class="data-item"><div class="item-title">58. 윤리경영과 사회적 책임</div><div class="item-meta"><span class="badge">공동</span> (주)영일프레시젼 (2024-2025)</div></li>
+            <li class="data-item"><div class="item-title">57. 2028 대학입학제도 개편에 따른 학생부위주전형 개선 연구</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2024-2025)</div></li>
+            <li class="data-item"><div class="item-title">56. 2024 재외동포 청년 한국이해 과정</div><div class="item-meta"><span class="badge">공동</span> 재외동포청 (2024-2025)</div></li>
+            <li class="data-item"><div class="item-title">55. 실감형 디지털 정신전력교육 실태 및 개선방안 연구</div><div class="item-meta"><span class="badge">책임</span> 국방정신전력원 (2024)</div></li>
+            <li class="data-item"><div class="item-title">54. 2024 디지털튜터 실태조사</div><div class="item-meta"><span class="badge">공동</span> 과학창의재단 (2024-2025)</div></li>
+            <li class="data-item"><div class="item-title">53. 대학원생 전용 연구 Producing Center 개발 연구</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2024)</div></li>
+            <li class="data-item"><div class="item-title">52. 2024 주제중심 학교 문화예술 교육지원사업 '예술로 탐구생활'</div><div class="item-meta"><span class="badge">공동</span> 한국문화예술교육진흥원 (2024)</div></li>
+            <li class="data-item"><div class="item-title">51. 기초학력지원사업 성과 관리 및 분석</div><div class="item-meta"><span class="badge">공동</span> 인천광역시 교육청 (2024-2025)</div></li>
+            <li class="data-item"><div class="item-title">50. 데이터 과학과 인공지능을 활용한 교육연구방법</div><div class="item-meta"><span class="badge">단독</span> 한국연구재단 (2022-2024)</div></li>
+            <li class="data-item"><div class="item-title">49. 교육전문대학원 체제 개선 연구</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2023-2024)</div></li>
+            <li class="data-item"><div class="item-title">48. 문자 표현 주제의 미술품 전시 및 교육 프로그램 운영</div><div class="item-meta"><span class="badge">공동</span> 한국연구재단 (2023-2024)</div></li>
+            <li class="data-item"><div class="item-title">47. 스마트폰 과의존 척도 개발</div><div class="item-meta"><span class="badge">공동</span> 한국지능정보사회진흥원(NIA) (2023)</div></li>
+            <li class="data-item"><div class="item-title">46. 장병 인성교육 민간위탁 용역 사업과 군 자체 프로그램의 효과성 비교분석 연구</div><div class="item-meta"><span class="badge">책임</span> 국방부 (2022)</div></li>
+            <li class="data-item"><div class="item-title">45. 데이터과학을 활용한 예비 초등교원의 임용합격 예측요인 탐색 II: 질적연구</div><div class="item-meta"><span class="badge">공동</span> 경인교육대학교 (2022-2023)</div></li>
+            <li class="data-item"><div class="item-title">44. 데이터과학을 활용한 예비 초등교원의 임용합격 예측요인 탐색 I: 양적연구</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2022-2023)</div></li>
+            <li class="data-item"><div class="item-title">43. 학부모와 교원의 상호신뢰 향상 방안</div><div class="item-meta"><span class="badge">공동</span> 경기도교육연구원 (2022)</div></li>
+            <li class="data-item"><div class="item-title">42. 데이터 시각화 주제의 전시 기획과 교육 프로그램 개발</div><div class="item-meta"><span class="badge">공동</span> 한국연구재단 (2021-2022)</div></li>
+            <li class="data-item"><div class="item-title">41. 2021년 충북학교미디어교육센터 운영 프로그램 개발</div><div class="item-meta"><span class="badge">공동</span> 충북교육연구정보원 (2021)</div></li>
+            <li class="data-item"><div class="item-title">40. Student Assessment and Collaborative Activity with Community of Teacher</div><div class="item-meta"><span class="badge">공동</span> 한국교육과정평가원 (2020-2021)</div></li>
+            <li class="data-item"><div class="item-title">39. 학교평가와 학교자율 종합감사의 연계방안 연구</div><div class="item-meta"><span class="badge">공동</span> 서울특별시교육연구정보원 (2020-2021)</div></li>
+            <li class="data-item"><div class="item-title">38. 기후위기와 교육체제의 정의로운 전환 방향</div><div class="item-meta"><span class="badge">공동</span> 경기도교육연구원 (2020)</div></li>
+            <li class="data-item"><div class="item-title">37. 직업기초능력평가 결과특성 및 교육맥락 변인 영향력 분석연구</div><div class="item-meta"><span class="badge">책임</span> 대한상공회의소 (2019-2020)</div></li>
+            <li class="data-item"><div class="item-title">36. 사회과학연구를 위한 네트워크 분석 방법</div><div class="item-meta"><span class="badge">단독</span> 한국연구재단 (2018-2020)</div></li>
+            <li class="data-item"><div class="item-title">35. 2019년도 디지털교과서 연구학교 효과성 분석</div><div class="item-meta"><span class="badge">공동</span> 한국교육학술정보원 (2019-2020)</div></li>
+            <li class="data-item"><div class="item-title">34. 2019년도 디지털교과서 선도학교 효과성 분석</div><div class="item-meta"><span class="badge">공동</span> 한국교육학술정보원 (2019-2020)</div></li>
+            <li class="data-item"><div class="item-title">33. 교육 중점 현안에 대응한 연구 개발 전략: KEDI 연구동향 분석</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2018)</div></li>
+            <li class="data-item"><div class="item-title">32. 중·고등학교 방과후학교 선행교육 프로그램 현황 및 인식 조사</div><div class="item-meta"><span class="badge">공동</span> 한국교육과정평가원 (2018)</div></li>
+            <li class="data-item"><div class="item-title">31. 교원의 직무 스트레스 실태 및 치유 방안 연구</div><div class="item-meta"><span class="badge">공동</span> 경기도교육연구원 (2018)</div></li>
+            <li class="data-item"><div class="item-title">30. 인천 초·중·고등학교 학생의 생활종합실태 분석</div><div class="item-meta"><span class="badge">공동</span> 인천광역시교육청 (2018)</div></li>
+            <li class="data-item"><div class="item-title">29. 인천광역시 교육혁신지구 성과지표 개발연구</div><div class="item-meta"><span class="badge">책임</span> 인천광역시교육청 (2018)</div></li>
+            <li class="data-item"><div class="item-title">28. 초 중학생 ICT 리터러시 수준 심층 분석</div><div class="item-meta"><span class="badge">책임</span> 한국교육학술정보원 (2017)</div></li>
+            <li class="data-item"><div class="item-title">27. 경인교육대학교 전형 시기 및 유형별 입학생의 특성 변화 분석</div><div class="item-meta"><span class="badge">책임</span> 대학교육협의회 (2017-2018)</div></li>
+            <li class="data-item"><div class="item-title">26. 경기교육종단연구 5차년도 기초분석 연구</div><div class="item-meta"><span class="badge">공동</span> 경기도교육연구원 (2017)</div></li>
+            <li class="data-item"><div class="item-title">25. 종단 네트워크 통계모형 비교 연구</div><div class="item-meta"><span class="badge">단독</span> 한국연구재단 (2017-2018)</div></li>
+            <li class="data-item"><div class="item-title">24. 교육복지성과 패널모형 구축 연구(3차년도)</div><div class="item-meta"><span class="badge">공동</span> 교육복지정책중점연구소 (2016-2017)</div></li>
+            <li class="data-item"><div class="item-title">23. 인천형 학교 혁신문화 측정도구 개발</div><div class="item-meta"><span class="badge">공동</span> 인천교육과학연구원 (2016)</div></li>
+            <li class="data-item"><div class="item-title">22. 2016년도 SW교육 연구학교 효과성 분석 연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육학술정보원 (2016)</div></li>
+            <li class="data-item"><div class="item-title">21. 대학기관연구(IR) 해외 사례 조사 및 HYU-IR 모형(안) 개발</div><div class="item-meta"><span class="badge">공동</span> 한양대학교 (2016)</div></li>
+            <li class="data-item"><div class="item-title">20. 2016년도 국가수준 초·중학생 ICT 리터러시 수준 측정 연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육학술정보원 (2016)</div></li>
+            <li class="data-item"><div class="item-title">19. 학교폭력예방문화 정착방안 연구(III)</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2016)</div></li>
+            <li class="data-item"><div class="item-title">18. 교육복지성과 패널모형 구축 연구(2차년도)</div><div class="item-meta"><span class="badge">공동</span> 교육복지정책중점연구소 (2015-2016)</div></li>
+            <li class="data-item"><div class="item-title">17. 중앙교육연수원 평가방법 및 평가기준 연구</div><div class="item-meta"><span class="badge">공동</span> 중앙교육연수원 (2015)</div></li>
+            <li class="data-item"><div class="item-title">16. 2015년 국가수준 초중등 학생 ICT 리터러시 수준 측정 연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육학술정보원 (2015)</div></li>
+            <li class="data-item"><div class="item-title">15. 자유학기 운영 학교의 학급 내 친구 네트워크 분석</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2015-2016)</div></li>
+            <li class="data-item"><div class="item-title">14. 학교폭력예방문화 정착방안 연구(II)</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2015)</div></li>
+            <li class="data-item"><div class="item-title">13. 글로벌 교원양성 프로그램 효율성 및 만족도 조사</div><div class="item-meta"><span class="badge">공동</span> 한국연구재단 (2014-2015)</div></li>
+            <li class="data-item"><div class="item-title">12. 사회연결망 분석의 특성과 활용방법: 초등교사사회연결망을 중심으로</div><div class="item-meta"><span class="badge">책임</span> 경인교육대학교 (2013-2014)</div></li>
+            <li class="data-item"><div class="item-title">11. 교원의 업무시간 실태분석 및 개선방안연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2014)</div></li>
+            <li class="data-item"><div class="item-title">10. 교육 분야 정부출연 연구기관과 국제기구와의 네트워크 강화 방안연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2014)</div></li>
+            <li class="data-item"><div class="item-title">9. 학교단위 교육복지 정책 성과 지수 개발연구</div><div class="item-meta"><span class="badge">공동</span> 한양대교육복지정책중점연구소 (2013-2014)</div></li>
+            <li class="data-item"><div class="item-title">8. 디지털교과서 개발 및 활성화 지원사업 종합평가 연구</div><div class="item-meta"><span class="badge">공동</span> 교육부 (2013-2014)</div></li>
+            <li class="data-item"><div class="item-title">7. 2013년 서울교육종단연구 정책연구과제</div><div class="item-meta"><span class="badge">공동</span> 서울시교육청 (2013-2014)</div></li>
+            <li class="data-item"><div class="item-title">6. 과학 디지털교과서를 활용한 효과적인 교수학습 연구</div><div class="item-meta"><span class="badge">공동</span> 한국과학창의재단 (2013-2014)</div></li>
+            <li class="data-item"><div class="item-title">5. 교원능력개발평가연구</div><div class="item-meta"><span class="badge">공동</span> 부산시교육청 (2013-2014)</div></li>
+            <li class="data-item"><div class="item-title">4. 한국교육종단연구 2013(1)</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2013)</div></li>
+            <li class="data-item"><div class="item-title">3. 한국의 교육 지표·지수 개발연구 (II): 학생역량지수 개발연구</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2013)</div></li>
+            <li class="data-item"><div class="item-title">2. OECD 교육과 사회적 진보 [ESP] 비교연구(Ⅲ)</div><div class="item-meta"><span class="badge">공동</span> 경제사회인문연구회 (2013)</div></li>
+            <li class="data-item"><div class="item-title">1. 21세기 글로벌 교육개혁 동향 연구-행복교육을 중심으로</div><div class="item-meta"><span class="badge">공동</span> 한국교육개발원 (2013)</div></li>
+          </ul>
+          
+          <ul class="data-list lang-en">
+             <li class="data-item"><div class="item-title">See Korean version for full project list (Projects 1-63)</div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-head">
+        <h2 class="lang-ko">논문 및 저서</h2>
+        <h2 class="lang-en">Publications</h2>
+        <span class="lang-ko">국외/국내 논문 및 저서 전체</span>
+      </div>
+
+      <div class="card">
+        <h3 class="lang-ko">1. 국외 논문 (SSCI)</h3>
+        <h3 class="lang-en">1. International Journals (SSCI)</h3>
+        <ul class="data-list">
+          <li class="data-item">
+            <a href="#" class="item-title">10. Etiology Beliefs, Coping, Church Climates, and Beliefs about Psychological Services</a>
+            <div class="item-meta">The Counseling Psychologist (2021)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">9. South Korea's educational welfare priority project: Effects on self-esteem and school adaptation</a>
+            <div class="item-meta">Children and Youth Services Review (2020)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">8. A New ICT Literacy Test for Elementary and Middle School Students in Republic of Korea</a>
+            <div class="item-meta">The Asia-Pacific Education Researcher (2019)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">7. Relationships among Teachers' Formal and Informal Positions and their Incoming Student Composition</a>
+            <div class="item-meta">Teachers College Record (2018)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">6. Examining a causal effect of Gyeonggi innovation schools in Korea</a>
+            <div class="item-meta">KEDI Journal of Educational Policy (2017)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">5. Formal Leadership versus Informal Leadership: How Institutions Penetrate Schools</a>
+            <div class="item-meta">Educational Administration Quarterly (2013)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">4. The Organization as a Filter of Institutional Diffusion</a>
+            <div class="item-meta">Teachers College Record (2013)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">3. Instructional Advice and Information Seeking Behavior in Elementary Schools</a>
+            <div class="item-meta">American Educational Research Journal (2012)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">2. An Exploratory Analysis of Formal School Leaders Positioning in Instructional Advice and Information Networks</a>
+            <div class="item-meta">American Journal of Education (2012)</div>
+          </li>
+          <li class="data-item">
+            <a href="#" class="item-title">1. The Alignment of the Informal and Formal Organizational Supports for Reform</a>
+            <div class="item-meta">Educational Administration Quarterly (2010)</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="lang-ko">2. 국내 논문 (KCI)</h3>
+        <h3 class="lang-en">2. Domestic Journals (KCI)</h3>
+        <div class="scroll-box">
+          <ul class="data-list">
+            <li class="data-item"><a href="#" class="item-title">46. 데이터 과학을 활용한 '국악교육' 50년 연구동향 분석</a><div class="item-meta">국악교육 (2025)</div></li>
+            <li class="data-item"><a href="#" class="item-title">45. 주기적 결과 모니터링을 위한 성과 측정 척도 개발 및 타당화</a><div class="item-meta">한국심리학회지 (2025)</div></li>
+            <li class="data-item"><a href="#" class="item-title">44. 텍스트 마이닝을 적용한 초등 예비·현직 교원별 및 교육경력별 학급경영관 비교분석</a><div class="item-meta">초등교육연구 (2025)</div></li>
+            <li class="data-item"><a href="#" class="item-title">43. 학교자체평가와 학교자율 종합감사의 연계 방안 탐색</a><div class="item-meta">홀리스틱융합교육연구 (2024)</div></li>
+            <li class="data-item"><a href="#" class="item-title">42. 국악전공 대학 수시전형에 대한 검토</a><div class="item-meta">국악교육 (2024)</div></li>
+            <li class="data-item"><a href="#" class="item-title">41. 청소년 스마트폰 과의존 척도-R 신규 개발 및 타당화</a><div class="item-meta">상담학연구 (2024)</div></li>
+            <li class="data-item"><a href="#" class="item-title">40. 유아동 스마트폰 과의존 측정을 위한 관찰자 척도개발 및 타당화</a><div class="item-meta">초등교육연구 (2024)</div></li>
+            <li class="data-item"><a href="#" class="item-title">39. 텍스트 마이닝을 활용한 '좋은 교사'에 대한 초등학생의 인식 탐색</a><div class="item-meta">교육실행연구 (2024)</div></li>
+            <li class="data-item"><a href="#" class="item-title">38. 교육전문대학원의 혁신전략에 대한 교수의 인식과 시사점</a><div class="item-meta">홀리스틱융합교육연구 (2024)</div></li>
+            <li class="data-item"><a href="#" class="item-title">37. 텍스트 마이닝을 활용한 한국의 중2병 이미지 분석</a><div class="item-meta">교육연구 (2022)</div></li>
+            <li class="data-item"><a href="#" class="item-title">36. 교육대학교 지원자의 학교생활기록부 텍스트 마이닝: 의미연결망 분석</a><div class="item-meta">교육평가연구 (2021)</div></li>
+            <li class="data-item"><a href="#" class="item-title">35. 텍스트 마이닝을 활용한 초등 예비교사의 영어 수업분석 관점 탐색</a><div class="item-meta">영어교과교육 (2021)</div></li>
+            <li class="data-item"><a href="#" class="item-title">34. 경기도 초·중·고등학생 기후위기 행동의 영향요인 분석</a><div class="item-meta">교육학연구 (2021)</div></li>
+            <li class="data-item"><a href="#" class="item-title">33. 2수준 다층모형을 적용한 학교안전문화 영향요인 분석</a><div class="item-meta">미래교육학연구 (2020)</div></li>
+            <li class="data-item"><a href="#" class="item-title">32. 예비교원의 도움 네트워크에 관한 통계모형의 경험적 비교</a><div class="item-meta">한국콘텐츠학회논문지 (2020)</div></li>
+            <li class="data-item"><a href="#" class="item-title">31. 교원의 비공식 조언·정보 네트워크 형성을 위한 대결자료 분석방법 비교</a><div class="item-meta">교육평가연구 (2019)</div></li>
+            <li class="data-item"><a href="#" class="item-title">30. An Empirical Comparison of Statistical Models for Longitudinal Elementary Teachers' Advice Networks</a><div class="item-meta">교육평가연구 (2019)</div></li>
+            <li class="data-item"><a href="#" class="item-title">29. 학생평가를 위한 교사의 조언·정보네트워크</a><div class="item-meta">학교교육연구 (2019)</div></li>
+            <li class="data-item"><a href="#" class="item-title">28. 초·중학생 ICT 리터러시 수준 변화 비교: 검사 연계화를 중심으로</a><div class="item-meta">교육과학연구 (2019)</div></li>
+            <li class="data-item"><a href="#" class="item-title">27. 다층모형을 활용한 초·중학생 ICT 리터러시 수준 영향요인</a><div class="item-meta">교육정보미디어연구 (2018)</div></li>
+            <li class="data-item"><a href="#" class="item-title">26. 경기도 다문화 밀집지역 초등 6학년생의 다문화 수용성과 또래 네트워크</a><div class="item-meta">미래교육학연구 (2018)</div></li>
+            <li class="data-item"><a href="#" class="item-title">25. 종단 네트워크 측정 및 분석: 초등학생 친구 및 도움 네트워크</a><div class="item-meta">교육평가연구 (2018)</div></li>
+            <li class="data-item"><a href="#" class="item-title">24. 예비 초등교사 도움 및 친구 네트워크 특성과 행복감</a><div class="item-meta">교육연구논총 (2018)</div></li>
+            <li class="data-item"><a href="#" class="item-title">23. 남자고등학생의 친구하위집단, 성취목표, 학습유형과 도움 네트워크</a><div class="item-meta">미래교육학연구 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">22. 초등교사의 자기효능감과 도움 네트워크가 교사간 신뢰에 미치는 영향</a><div class="item-meta">교육논총 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">21. 3수준 다층모형을 통한 초등학생의 컴퓨팅 사고력 영향요인 분석</a><div class="item-meta">컴퓨터교육학회논문지 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">20. 지역규모에 따른 초·중학생의 ICT 리터러시 수준 차이 분석</a><div class="item-meta">컴퓨터교육학회논문지 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">19. 감정일기 쓰기활동 프로그램이 초등 3학년의 학교생활 적응에 미치는 영향</a><div class="item-meta">학교교육연구 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">18. 교육복지우선지원사업이 초·중학생의 자존감과 학교생활적응에 미치는 영향</a><div class="item-meta">교육심리연구 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">17. 초·중학생 ICT 리터러시 수준에 영향을 미치는 교사 요인 분석</a><div class="item-meta">정보교육연구 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">16. 학교 혁신문화 측정도구 개발 및 타당화</a><div class="item-meta">교육행정학연구 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">15. Similarities, Differences, and Influential Factors of Elementary Teachers' Networks</a><div class="item-meta">교육평가연구 (2017)</div></li>
+            <li class="data-item"><a href="#" class="item-title">14. 초등학교 교육복지우선지원사업 효과 분석</a><div class="item-meta">초등교육연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">13. 사회 네트워크 분석을 활용한 초등학생 친구 네트워크 및 도움 네트워크 분석</a><div class="item-meta">교육평가연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">12. 2015년도 국가수준 초·중학생 ICT 리터러시 검사의 차별기능문항 분석</a><div class="item-meta">교육평가연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">11. 학습일지쓰기활동이 초등학교 저학년 학생의 학습습관에 미치는 영향</a><div class="item-meta">학교교육연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">10. PLS-SEM을 적용한 초등학교 고학년의 학업성취, 친구관계, 행복감 관계</a><div class="item-meta">교육심리연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">9. 경기도 초등학교 서술형·논술형 교실평가 문항의 오류분석</a><div class="item-meta">교육평가연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">8. 프로젝트 접근법 수업이 초등학교 저학년생의 학습동기에 미치는 영향</a><div class="item-meta">학습자중심교과교육연구 (2016)</div></li>
+            <li class="data-item"><a href="#" class="item-title">7. 초등학생 도움 네트워크 측정 및 분석: 행복감에 미치는 영향</a><div class="item-meta">교육평가연구 (2015)</div></li>
+            <li class="data-item"><a href="#" class="item-title">6. 초등학생에 대한 교사별 평가제의 영향 분석</a><div class="item-meta">교육평가연구 (2015)</div></li>
+            <li class="data-item"><a href="#" class="item-title">5. 사회선택 통계모형(P2, p*)을 활용한 남자고등학생의 영어도움 네트워크 분석</a><div class="item-meta">교육평가연구 (2015)</div></li>
+            <li class="data-item"><a href="#" class="item-title">4. 초등학생이 지각한 학교 호감도 차이 분석: 혁신학교와 일반학교</a><div class="item-meta">초등교육연구 (2015)</div></li>
+            <li class="data-item"><a href="#" class="item-title">3. 초등교원의 동료 네트워크가 교직 만족감과 행복감에 미치는 영향</a><div class="item-meta">초등교육연구 (2015)</div></li>
+            <li class="data-item"><a href="#" class="item-title">2. 온라인 영어학습 동아리의 생성과 발전: 한인 이민 여성 사례</a><div class="item-meta">재외한인연구 (2014)</div></li>
+            <li class="data-item"><a href="#" class="item-title">1. 과학 디지털교과서 활용에 대한 초등학생들의 인식</a><div class="item-meta">초등과학교육 (2014)</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="lang-ko">3. 저서 (Books)</h3>
+        <h3 class="lang-en">3. Books</h3>
+        <ul class="data-list">
+          <li class="data-item"><a href="#" class="item-title">6. 디지털 시대의 인공지능과 교육</a><div class="item-meta">학지사 (2024)</div></li>
+          <li class="data-item"><a href="#" class="item-title">5. 경인학술총서 제7권 (에듀테크와 학교 교육)</a><div class="item-meta">지식과 감성 (2024)</div></li>
+          <li class="data-item"><a href="#" class="item-title">4. 사회과학연구를 위한 네트워크 분석방법</a><div class="item-meta">사회평론아카데미 (2022)</div></li>
+          <li class="data-item"><a href="#" class="item-title">3. 기후위기 시대의 환경교육 세 학교 이야기</a><div class="item-meta">학이시습 (2021)</div></li>
+          <li class="data-item"><a href="#" class="item-title">2. Assessing Teacher Quality</a><div class="item-meta">Teachers College Press (2011)</div></li>
+          <li class="data-item"><a href="#" class="item-title">1. Social Network Theory and Education Change</a><div class="item-meta">Harvard Education Press (2010)</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <h2 class="lang-ko">연락처</h2>
+        <h2 class="lang-en">Contact</h2>
+      </div>
+      
+      <div class="card contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">
+            <a href="mailto:educpa@ginue.ac.kr">educpa@ginue.ac.kr</a><br>
+            <a href="mailto:educpa@gmail.com">educpa@gmail.com</a>
+          </span>
+        </div>
+        
+        <div class="contact-item">
+          <span class="contact-label lang-ko">연구실</span>
+          <span class="contact-label lang-en">Office</span>
+          <span class="contact-value lang-ko">
+            경인교육대학교 인문사회관 연구동 610호
+          </span>
+          <span class="contact-value lang-en">
+            Room 610, Humanities & Social Science Bldg., GINUE
+          </span>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label lang-ko">주소</span>
+          <span class="contact-label lang-en">Address</span>
+          <span class="contact-value lang-ko">
+            (13910) 경기도 안양시 만안구 삼막로 155
+          </span>
+          <span class="contact-value lang-en">
+            155, Sammak-ro, Manan-gu, Anyang-si, Gyeonggi-do, Republic of Korea
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Prof. Chong Min Kim, Gyeongin National University of Education.</p>
+  </footer>
+
+  <script>
+    // 연도 자동 업데이트
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 언어 설정 함수
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      const buttons = document.querySelectorAll('.lang-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      if(lang === 'ko') buttons[0].classList.add('active');
+      else buttons[1].classList.add('active');
+    }
+
+    // 초기 실행 (기본 한국어)
+    setLanguage('ko');
+  </script>
+</body>
+</html>
