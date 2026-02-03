@@ -33,8 +33,8 @@
 | Degree | Institution | Year |
 |--------|-------------|------|
 | **Ph.D.** Measurement & Quantitative Methods | Michigan State University | 2011 |
-| **M.A.** Education | Yonsei University (연세대학교) | - |
-| **B.A.** Education | Yonsei University (연세대학교) | - |
+| **M.A.** Education | Yonsei University (연세대학교) | 2004 |
+| **B.A.** Education | Yonsei University (연세대학교) | 2000 |
 
 ---
 
