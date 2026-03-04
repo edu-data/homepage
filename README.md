@@ -4,7 +4,7 @@
 [![GINUE](https://img.shields.io/badge/GINUE-경인교육대학교-green)](https://www.ginue.ac.kr)
 
 **경인교육대학교 교육학과 교수 **  
-*Professor & Department Chair, Dept. of Education, Gyeongin National University of Education*
+*Professor, Dept. of Education, Gyeongin National University of Education*
 
 ---
 
