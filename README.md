@@ -1,11 +1,13 @@
 # 김종민 교수 | Chong Min Kim, PhD
 
 [![GitHub Pages](https://img.shields.io/badge/🌐_Live_Website-Visit-blue)](https://edu-data.github.io/homepage/)
-[![GINUE](https://img.shields.io/badge/GINUE-경인교육대학교-green)](https://www.ginue.ac.kr)
+[![GINUE](https://img.shields.io/badge/GINUE-경인교육대학교-green)](https://www.ginue.ac.kr/kor/Main.do)
 [![KSLP](https://img.shields.io/badge/KSLP-한국기업교육학회-orange)](https://www.hrdkorea.com/)
+[![KOSEEV](https://img.shields.io/badge/KOSEEV-한국교육평가학회-navy)](https://www.koseev.or.kr/index.ink)
+[![Holistic](https://img.shields.io/badge/Holistic-한국홀리스틱융합교육학회-teal)](http://holistic.med1dev.net/html/)
 
-**경인교육대학교 교육학과 교수 · [한국기업교육학회](https://www.hrdkorea.com/) 회장**  
-*Professor, Dept. of Education, GINUE · President, [Korean Society for Learning and Performance (KSLP)](https://www.hrdkorea.com/)*
+**[경인교육대학교 교육학과](https://www.ginue.ac.kr/kor/Main.do) 교수 · [한국기업교육학회](https://www.hrdkorea.com/) 회장**  
+*Professor, Dept. of Education, [GINUE](https://www.ginue.ac.kr/kor/Main.do) · President, [Korean Society for Learning and Performance (KSLP)](https://www.hrdkorea.com/)*
 
 ---
 
@@ -41,10 +43,10 @@
 
 ## 💼 Current Positions
 
-- 🏫 **정교수 / Full Professor** - 경인교육대학교 교육학과 (2022.09 ~)
+- 🏫 **정교수 / Full Professor** - [경인교육대학교 교육학과](https://www.ginue.ac.kr/kor/Main.do) (2022.09 ~)
 - 📋 **학회장 / President** - [한국기업교육학회 (Korean Society for Learning and Performance, KSLP)](https://www.hrdkorea.com/) (2026.03 ~ )
-- 📝 **편집위원장** - 한국홀리스틱융합교육학회 (2025.01 ~)
-- 📝 **학술위원장** - 한국교육평가학회 (2026.01 ~)
+- 📝 **편집위원장 / Editor-in-Chief** - [한국홀리스틱융합교육학회 (Korean Society for Holistic Convergence Education)](http://holistic.med1dev.net/html/) (2025.01 ~)
+- 📝 **학술위원장 / Committee Chair** - [한국교육평가학회 (Korean Society for Educational Evaluation, KOSEEV)](https://www.koseev.or.kr/index.ink) (2026.01 ~)
 - 📖 **편집위원** - 한국교육개발원 '한국교육' (2025.03 ~)
 
 ---
@@ -109,4 +111,4 @@
 
 ---
 
-© 2026 Prof. Chong Min Kim, Gyeongin National University of Education.
+© 2026 Prof. Chong Min Kim, [Gyeongin National University of Education](https://www.ginue.ac.kr/kor/Main.do).
