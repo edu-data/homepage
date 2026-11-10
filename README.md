@@ -2,9 +2,10 @@
 
 [![GitHub Pages](https://img.shields.io/badge/🌐_Live_Website-Visit-blue)](https://edu-data.github.io/homepage/)
 [![GINUE](https://img.shields.io/badge/GINUE-경인교육대학교-green)](https://www.ginue.ac.kr)
+[![KSLP](https://img.shields.io/badge/KSLP-한국기업교육학회-orange)](https://www.hrdkorea.com/)
 
-**경인교육대학교 교육학과 교수 · 한국기업교육학회 회장**  
-*Professor, Dept. of Education, GINUE · President, The Korean Society for Corporate Education*
+**경인교육대학교 교육학과 교수 · [한국기업교육학회](https://www.hrdkorea.com/) 회장**  
+*Professor, Dept. of Education, GINUE · President, [Korean Society for Learning and Performance (KSLP)](https://www.hrdkorea.com/)*
 
 ---
 
@@ -41,7 +42,7 @@
 ## 💼 Current Positions
 
 - 🏫 **정교수 / Full Professor** - 경인교육대학교 교육학과 (2022.09 ~)
-- 📋 **학회장 / President** - 한국기업교육학회 (2026.03 ~ )
+- 📋 **학회장 / President** - [한국기업교육학회 (Korean Society for Learning and Performance, KSLP)](https://www.hrdkorea.com/) (2026.03 ~ )
 - 📝 **편집위원장** - 한국홀리스틱융합교육학회 (2025.01 ~)
 - 📝 **학술위원장** - 한국교육평가학회 (2026.01 ~)
 - 📖 **편집위원** - 한국교육개발원 '한국교육' (2025.03 ~)
