@@ -3,8 +3,8 @@
 [![GitHub Pages](https://img.shields.io/badge/🌐_Live_Website-Visit-blue)](https://edu-data.github.io/homepage/)
 [![GINUE](https://img.shields.io/badge/GINUE-경인교육대학교-green)](https://www.ginue.ac.kr)
 
-**경인교육대학교 교육학과 교수 **  
-*Professor, Dept. of Education, Gyeongin National University of Education*
+**경인교육대학교 교육학과 교수 · 한국기업교육학회 회장**  
+*Professor, Dept. of Education, GINUE · President, The Korean Society for Corporate Education*
 
 ---
 
