@@ -5,6 +5,7 @@
 [![KSLP](https://img.shields.io/badge/KSLP-한국기업교육학회-orange)](https://www.hrdkorea.com/)
 [![KOSEEV](https://img.shields.io/badge/KOSEEV-한국교육평가학회-navy)](https://www.koseev.or.kr/index.ink)
 [![Holistic](https://img.shields.io/badge/Holistic-한국홀리스틱융합교육학회-teal)](http://holistic.med1dev.net/html/)
+[![KEDI](https://img.shields.io/badge/KEDI-한국교육개발원-red)](https://www.kedi.re.kr/)
 
 **[경인교육대학교 교육학과](https://www.ginue.ac.kr/kor/Main.do) 교수 · [한국기업교육학회](https://www.hrdkorea.com/) 회장**  
 *Professor, Dept. of Education, [GINUE](https://www.ginue.ac.kr/kor/Main.do) · President, [Korean Society for Learning and Performance (KSLP)](https://www.hrdkorea.com/)*
@@ -47,8 +48,10 @@
 - 📋 **학회장 / President** - [한국기업교육학회 (Korean Society for Learning and Performance, KSLP)](https://www.hrdkorea.com/) (2026.03 ~ )
 - 📝 **편집위원장 / Editor-in-Chief** - [한국홀리스틱융합교육학회 (Korean Society for Holistic Convergence Education)](http://holistic.med1dev.net/html/) (2025.01 ~)
 - 📝 **학술위원장 / Committee Chair** - [한국교육평가학회 (Korean Society for Educational Evaluation, KOSEEV)](https://www.koseev.or.kr/index.ink) (2026.01 ~)
-- 📖 **편집위원** - 한국교육개발원 '한국교육' (2025.03 ~)
+- 📖 **편집위원** - [한국교육개발원 '한국교육'](https://www.kedi.re.kr/) (2025.03 ~)
 - ⚖️ **감사 / Auditor** - [경인교육대학교 발전기금재단](https://www.ginue.ac.kr/kor/Main.do) (2025.03 ~)
+- 🔬 **전문간사(부위원장) / Executive Secretary (Vice Chair)** - [경인교육대학교 생명윤리위원회(IRB)](https://www.ginue.ac.kr/kor/Main.do) (2025.03 ~)
+- 🔬 **심의위원 / Committee Member** - [한국교육개발원(KEDI) 생명윤리위원회(IRB)](https://www.kedi.re.kr/) (2026.03 ~)
 
 ---
 
