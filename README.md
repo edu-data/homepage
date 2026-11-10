@@ -48,6 +48,7 @@
 - 📝 **편집위원장 / Editor-in-Chief** - [한국홀리스틱융합교육학회 (Korean Society for Holistic Convergence Education)](http://holistic.med1dev.net/html/) (2025.01 ~)
 - 📝 **학술위원장 / Committee Chair** - [한국교육평가학회 (Korean Society for Educational Evaluation, KOSEEV)](https://www.koseev.or.kr/index.ink) (2026.01 ~)
 - 📖 **편집위원** - 한국교육개발원 '한국교육' (2025.03 ~)
+- ⚖️ **감사 / Auditor** - [경인교육대학교 발전기금재단](https://www.ginue.ac.kr/kor/Main.do) (2025.03 ~)
 
 ---
 
