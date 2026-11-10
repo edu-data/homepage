@@ -48,7 +48,7 @@
 - 🎓 **대학원 박사과정 교수 / Doctoral Faculty** - [경인교육대학교 대학원](https://www.ginue.ac.kr/kor/Main.do) (소속: 교육방법, 디지털미디어교육, 한국문화예술교육, 학교상담, 특수교육)
 - 📋 **학회장 / President** - [한국기업교육학회 (Korean Society for Learning and Performance, KSLP)](https://www.hrdkorea.com/) (2026.03 ~ )
 - 📝 **편집위원장 / Editor-in-Chief** - [한국홀리스틱융합교육학회 (Korean Society for Holistic Convergence Education)](http://holistic.med1dev.net/html/) (2025.01 ~)
-- 📝 **학술위원장 / Committee Chair** - [한국교육평가학회 (Korean Society for Educational Evaluation, KOSEEV)](https://www.koseev.or.kr/index.ink) (2026.01 ~)
+- 📝 **이사 · 학술위원장 (전 연구개발위원장 역임) / Board Member & Academic Committee Chair (Former R&D Committee Chair)** - [한국교육평가학회 (Korean Society for Educational Evaluation, KOSEEV)](https://www.koseev.or.kr/index.ink) (2018.01 ~)
 - 📖 **편집위원** - [한국교육개발원 '한국교육'](https://www.kedi.re.kr/) (2025.03 ~)
 - ⚖️ **감사 / Auditor** - [경인교육대학교 발전기금재단](https://www.ginue.ac.kr/kor/Main.do) (2025.03 ~)
 - 🔬 **전문간사(부위원장) / Executive Secretary (Vice Chair)** - [경인교육대학교 생명윤리위원회(IRB)](https://www.ginue.ac.kr/kor/Main.do) (2025.03 ~)
