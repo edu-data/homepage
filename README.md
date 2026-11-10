@@ -80,13 +80,14 @@
 - **학교자체평가와 학교자율 종합감사의 연계 방안 탐색** - *홀리스틱융합교육연구* (2024)
 - **국악전공 대학 수시전형에 대한 검토** - *국악교육* (2024)
 
-### Featured Books
+### Books (저서)
 
-- **Social Network Theory and Education Change** - Harvard Education Press (2010)
+- **디지털 시대의 인공지능과 교육** (*Artificial Intelligence and Education in the Digital Era*) - 학지사 / Hakjisa (2024)
+- **경인학술총서 제7권: 에듀테크와 학교 교육** (*GINUE Academic Series Vol. 7: EdTech and School Education*) - 지식과 감성 / Jisik & Gamsong (2024)
+- **사회과학연구를 위한 네트워크 분석방법** (*Social Network Analysis Methods for Social Science Research*) - 사회평론아카데미 / Sahoepyoungron Academy (2022)
+- **기후위기 시대의 환경교육 세 학교 이야기** (*Environmental Education in the Era of Climate Crisis: Stories of Three Schools*) - 학이시습 / Hakisiseup (2021)
 - **Assessing Teacher Quality** - Teachers College Press (2011)
-- **사회과학연구를 위한 네트워크 분석방법** - 사회평론아카데미 (2022)
-- **디지털 시대의 인공지능과 교육** - 학지사 (2024)
-
+- **Social Network Theory and Educational Change** - Harvard Education Press (2010)
 ---
 
 ## 📞 Contact
